@@ -16,6 +16,8 @@ The training process involves:
 - CUDA-capable GPU
 - Hugging Face account with write access
 - AWS credentials configured for S3 access
+- [RecipeNLG Dataset](https://www.kaggle.com/datasets/paultimothymooney/recipenlg)
+- Results from [createDataset](https://github.com/Recipes-Recommendations/createDataset)
 
 ## Dependencies
 
@@ -54,7 +56,7 @@ HF_MODEL_ID = "your-username/your-model-name"
 ## Dataset Preparation
 
 The training process uses two data sources:
-1. Original recipe dataset (`recipes_data.csv.zip`) containing:
+1. Original recipe dataset (`recipes_data.csv.zip`) containing the [RecipesNLG dataset](https://www.kaggle.com/datasets/paultimothymooney/recipenlg). The columns in the dataset are:
    - Recipe titles
    - Ingredients lists
    - Recipe links
